@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de" onclick="onClickContentAndMenuOpened()">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>TTV Bühlertal | Sportstätte</title>
+  </head>
+  <body>
+    <div id="main" class="main">
+      <div class="wrapper" id="wrapper">
+        <div class="header" onclick="navigateToIndex()">
+          <img src="images/header/header.png" alt="Titelbild-TTV" />
+        </div>
+        <div class="main-menu" id="main-menu">
+          <script>
+            insertMenu();
+          </script>
+        </div>
+        <div class="content">
+          <div class="standard-article">
+            <h2>Sportstätte</h2>
+            <div style="text-align: center;">
+              <ul>
+                <li><a href="vorstand.html">Vorstand</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="mitgliedsantrag.html">Mitgliedsantrag</a></li>
+                <li><a href="ehrenmitglieder.html">Ehrenmitglieder</a></li>
+              </ul>
+            </div>
+            <hr />
+            <img
+              src="images/halle-mittelberg-1.jpg"
+              style="max-width: 100%; height: 40vh; object-fit: scale-down;"
+              alt="Halle Mittelberg"
+            />
+            <p><b>Tischtennisverein Bühlertal</b></p>
+            <p>Mittelberghalle Bühlertal</p>
+            <p>Klotzbergstraße</p>
+            <p>77830 Bühlertal</p>
+
+            <img
+              src="images/img_5417.jpg"
+              style="max-width: 100%; height: 40vh; object-fit: scale-down;"
+              alt="Innenansicht Mittelberghalle Nummer 1"
+            />
+            <img
+              src="images/img_5419.jpg"
+              style="max-width: 100%; height: 40vh; object-fit: scale-down;"
+              alt="Innenansicht Mittelberghalle Nummer 1"
+            />
+          </div>
+        </div>
+        <div class="footer" id="footer">
+          <script>
+            insertFooter();
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
