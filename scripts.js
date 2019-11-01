@@ -85,6 +85,7 @@ var setActiveLink = pathName => {
       setElementClassNameToActiveLink("impressum");
       break;
     default:
+      setElementClassNameToActiveLink("index");
       break;
   }
 };
