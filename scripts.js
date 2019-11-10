@@ -159,6 +159,7 @@ var insertFooter = () => {
   <ul>
     <li><a href="impressum.html">® 2019 Tischtennisverein Bühlertal</a></li>
     <li><a href="https://www.facebook.com/TTVBuehlertal/" target="_blank">Facebook</a></li>
+    <li><a href="https://www.instagram.com/p/B4dIGsKIQpd/?igshid=kzsv2ctdus3l" target="_blank">Instagram</a></li>
     <li><a href="impressum.html">Impressum</a></li>
     <li><a href="datenschutz.html">Datenschutz</a></li>
   </ul>
