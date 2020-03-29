@@ -282,6 +282,11 @@ ul li a.active-link {
   }
 }
 
+.sponsoren li a {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
 .sponsoren li a img {
   position: relative;
   float: left;
