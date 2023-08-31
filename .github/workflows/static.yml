@@ -43,4 +43,5 @@ jobs:
         with:
           target-url: http://ttvbuehlertal.de
           # Selector to query
-          target-selector: '#' 
+          # The CSS selector for the element to find
+          target-selector: "#main"
