@@ -154,10 +154,11 @@ var insertMenu = () => {
 };
 
 var insertFooter = () => {
+  const year = new Date().getFullYear();
   var footer = document.getElementById("footer");
   footer.innerHTML = `
   <ul>
-    <li><a href="impressum.html">® 2019 Tischtennisverein Bühlertal</a></li>
+    <li><a href="impressum.html">© ${year} Tischtennisverein Bühlertal</a></li>
     <li><a href="https://www.facebook.com/TTVBuehlertal/" target="_blank">Facebook</a></li>
     <li><a href="https://www.instagram.com/p/B4dIGsKIQpd/?igshid=kzsv2ctdus3l" target="_blank">Instagram</a></li>
     <li><a href="impressum.html">Impressum</a></li>
