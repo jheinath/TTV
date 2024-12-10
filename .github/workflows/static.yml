@@ -44,4 +44,4 @@ jobs:
           target-url: http://ttvbuehlertal.de
           # Selector to query
           # The CSS selector for the element to find
-          target-selector: "#main"
+          target-selector: "#brand"
