@@ -1,86 +1,229 @@
 <!DOCTYPE html>
-<html lang="de" onclick="onClickContentAndMenuOpened()">
-  <head>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="images/favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="images/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script type="text/javascript" src="scripts.js"></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>TTV Bühlertal | Training</title>
-  </head>
-  <body>
-    <div id="main" class="main">
-      <div class="wrapper" id="wrapper">
-        <div class="header" onclick="navigateToIndex()">
-          <img src="images/header/header.png" alt="Titelbild-TTV" />
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" user-scalable=0/>
+  <title>Tischtennisverein Bühlertal | Offizielle Seite</title>
+  <script defer src="app.js"></script>
+  <script src="https://kit.fontawesome.com/24583cc326.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    
+  <div class="banner_training fluid">
+    <header>
+        <div id="brand"><a class="text-wrap" href="/">TTV Bühlertal</a></div>
+        <nav>
+          <ul id="desktop">
+            <li><a href="/index.html">Start</a></li>
+            <li><a href="/training.html">Training</a></li>
+            <li><a href="/verein.html">Verein</a></li>
+            <li><a href="/mannschaften.html" >Mannschaften</a></li>
+            <li><a href="/vorstand.html">Vorstand</a></li>
+            <li id="contact"><a href="/kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="/index.html">Start</a></li>
+            <li><a href="/training.html">Training</a></li>
+            <li><a href="/verein.html">Verein</a></li>
+            <li><a href="/mannschaften.html" >Mannschaften</a></li>
+            <li><a href="/vorstand.html">Vorstand</a></li>
+            <li id="contact"><a href="/kontakt.html">Kontakt</a></li>
+          </ul>
         </div>
-        <div class="main-menu" id="main-menu">
-          <script>
-            insertMenu();
-          </script>
-        </div>
-        <div class="content">
-          <div class="standard-article">
-            <h2>Training</h2>
-            <div style="text-align: center;">
-              <ul>
-                <li><a href="vorstand.html">Vorstand</a></li>
-                <li><a href="sportstaette.html">Sportstätte</a></li>
-                <li><a href="mitgliedsantrag.html">Mitgliedsantrag</a></li>
-                <li><a href="ehrenmitglieder.html">Ehrenmitglieder</a></li>
-              </ul>
-            </div>
-            <hr />
-            <div class="flex-box">
-              <div class="flex-box-child">
-                <h4>Training Jugend</h4>
-                <p>Montags und Mittwochs</p>
-                <p>Schülerinnen und Schüler</p>
-                <p><b>18:00 - 19:45</b> Uhr</p>
-                <p>Mädchen und Jungen</p>
-                <p><b>19:00 - 21:00</b> Uhr</p>
-              </div>
-              <div class="flex-box-child">
-                <h4>Training Erwachsene</h4>
-                <p>Montags und Mittwochs</p>
-                <p><b>19:45 - 22:00</b> Uhr</p>
-              </div>
-              <div class="flex-box-child">
-                <h4>Samstags</h4>
-                <p>ab <b>14:30</b> Uhr</p>
-                <p>Heimspiele aller Mannschaften</p>
-              </div>
-            </div>
+      </header>
+      <script src="app.js"></script>
+
+      <div class="col-md-6 col-sm-6 offset-md-3 landing_page">
+        <h1 class="text-center fw-bold text-wrap landing_page_h1">Training</h1>
+        <p class="text-center fw-medium fs-4">Tischtennis Verein Bühlertal e.V.</p>
+      </div>
+      <div class="landing_page_mobile">
+        <h1 class="text-center fw-bold text-wrap landing_page_h1_mobile">Training</h1>
+        <p class="text-center fw-medium fs-4">Tischtennis Verein Bühlertal e.V.</p>
+      </div>
+
+      </div>
+
+    <section class="p-5 text-center">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div class="text-center text-sm-start text-wrap">
+            <h1>Training</h1>
+            <h2>Trainingszeiten Jugend:</h2>
+            <p>Montag: 18:00 - 19:45<br>
+            Mittwoch: 18:00 - 19:45<br>
+            Freitag: 15:00 - 17:00 (nach Absprache)</p>
+            <h2>Trainingszeiten Aktive:</h2>
+            <p>Montag: 20:00 -22:00<br>
+            Mittwoch: 20:00 - 22:00<br>
+            Freitag: <span class="fst-italic">nach Absprache</span>  
+            </p>
+            <button type="button" class="button"><a class="text-wrap" href="verein.html#mitgliedsantrag">Zum Anmeldeformular</a></button>
           </div>
-        </div>
-        <div class="footer" id="footer">
-          <script>
-            insertFooter();
-          </script>
+          <img class="img-fluid w-50 d-none d-sm-block" src="pictures_compressed/on_website/training_reihe.webp" alt="Training">
         </div>
       </div>
-    </div>
-  </body>
-</html>
+    </section>
+
+    <section class="p-5 text-center">
+      
+        
+        <h1>Trainerteam</h1>
+
+          <!-- BILDER -->
+          <div class="container w-75 d-none d-sm-block trainer_einzelbilder">
+           <div id="carouselExampleCaptions" class="carousel slide carousel-fade"> <!-- remove carousel-fade -> Slide  -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="pictures_compressed/verein/trainer/trainerteam_gruppenbild.webp" class="d-block w-100" alt="Trainerteam">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Unser Trainerteam</h5>
+                  <p>Von links nach rechts: P. Ganter; L. Huber; F. Albrecht; A. Kirsamer; R. Zimpfer; A. Zimpfer; M. Kohler; J. Wipper</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pictures_compressed/verein/trainer/ralf_zimpfer_training.webp" class="d-block w-100" alt="Ralf Zimpfer">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Ralf Zimpfer</h5>
+                  <p>Ralf Zimpfer ist bei uns der "Cheftrainer" und leitet das Training</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pictures_compressed/verein/trainer/peter_ganter_training.webp" class="d-block w-100" alt="Peter Ganter">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Peter Ganter</h5>
+                  <p>Peter Ganter ist nicht nur 1. Vorsitzender des Vereins, sondern auch Jugendtrainer. Er hat in seiner Laufbahn als Trainer schon unzähligen Kindern Tischtennis beigebracht.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pictures_compressed/verein/trainer/fabian_albrecht_training.webp" class="d-block w-100" alt="Fabian Albrecht">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Fabian Albrecht</h5>
+                  <p>Fabian Albrecht hat seine C-Trainer Lizenz mit 17 Jahren abgeschlossen und ist somit der jüngste Trainer in Bühlertal</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pictures_compressed/verein/trainer/aline_zimpfer_training.webp" class="d-block w-100" alt="Aline Zimpfer">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Aline Zimpfer</h5>
+                  <p>Aline Zimpfer gestaltet das Training vor allem für die jüngeren Kinder bei den Altersklassen U13 und jünger</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pictures_compressed/verein/trainer/luca_huber_training.webp" class="d-block w-100" alt="Luca Huber">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Luca Huber</h5>
+                  <p>Luca Huber hilft seit 3 Jahren aktiv im Jugendtraining mit und belegte schnell einen StarTTer Lehrgang, bei dem er die D-Lizenz erworben hat.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pictures_compressed/verein/trainer/markus_kohler_training.webp" class="d-block w-100" alt="MArkus Kohler">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Markus Kohler</h5>
+                  <p>Markus Kohler unterstützt die Jugend des TTV's schon lange, indem er im Training mit den Jugendlichen spielt und ihnen immer wertvolle Ratschläge mitgibt.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pictures_compressed/verein/trainer/anton_kirsamer_training.webp" class="d-block w-100" alt="Anton Kirsamer">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Anton Kirsamer</h5>
+                  <p>Anton Kirsamer ist seit Sommer 23 Besitzer der C-Lizenz und hilft unterstützt die vor allem die älteren Jugendlichen aus der 1. Gruppe.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pictures_compressed/verein/trainer/julia_wipper_training.webp" class="d-block w-100" alt="Julia Wipper">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Julia Wipper</h5>
+                  <p>Julia Wipper ist bei uns vor allem für den Mädchenbereich und die jüngeren Jugendlichen zuständig.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="container-fluid d-sm-none d-block">
+          <img class="img-fluid" src="pictures_compressed/verein/trainer/trainerteam_gruppenbild.webp" alt="Trainerteam">
+          <p>Von links nach rechts: P. Ganter; L. Huber; F. Albrecht; A. Kirsamer; R. Zimpfer; A. Zimpfer; M. Kohler; J. Wipper</p>
+        </div>
+
+          <!-- BILDER -->
+
+
+        
+          
+
+        
+      </div>
+    </section>
+
+    <section class="p-5 text-center">
+      <div class="container">
+        <div class="d-sm-flex justify-content-between align-items-center">
+          <div class="text-center text-sm-start text-wrap">
+            <h1>Sportstätte</h1>
+            <h2>Tischtennisverein Bühlertal</h2> 
+            <p>Mittelberghalle Bühlertal</p>
+            <p>Klotzbergstraße</p>
+            <p>77830 Bühlertal</p>          
+          </div>
+          <img class="img-fluid w-50 d-none d-sm-block" src="pictures_compressed/on_website/training_reihe.webp" alt="Sportstätte des TTV Bühlertals">
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead"><span class="text-warning">Copyright &copy; 2024 TTV Bühlertal e.V.</span></p>
+        <a class="my_footer_datenschutz_impressum p-1" href="impressum.html">Impressum</a>
+        <a class="my_footer_datenschutz_impressum p-1" href="datenschutz.html">Datenschutz</a>
+        <a class="my_footer_datenschutz_impressum p-1" href="verein.html#mitgliedsantrag">Mitgliedsantrag</a>
+
+        <div class="position-absolute bottom-0 start-0 p-5 footer_my_a d-none d-sm-block">
+        <a class="footer_my_a" href="https://www.facebook.com/TTVBuehlertal/" id="facebook_color" target="_blank">
+          <i class="fa fa-facebook my_icons_footer"></i>
+        </a>
+        <a class="footer_my_a" href="https://www.instagram.com/ttv.buehlertal/" id="instagram_color" target="_blank">
+          <i class="fa fa-instagram my_icons_footer"></i>
+        </a>
+        </div>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="fa-solid fa-arrow-up my_arrow"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+
+</body>

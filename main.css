@@ -1,0 +1,417 @@
+/* Fonts; und generelles */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, black, black, black, #111118, #1c1c27f9, #000, #000000);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Landing Page Layout und Hintergrundbilder */
+
+.landing_page{
+  margin-top: 15%;
+  transform: translateY(-15%);
+}
+
+.landing_page .landing_page_h1{
+  font-size: 75px;
+}
+
+.landing_page .landing_page_h1_mobile{
+  font-size: 25px;
+}
+
+/* Banner */
+
+.banner_index{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,255)),url(pictures_compressed/on_website/halle_event.webp);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.banner_training{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,255)),url(pictures_compressed/backgrounds/trainingsbild-min.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.banner_verein{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,255)),url(pictures_compressed/backgrounds/jugendtraining.webp);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.banner_mannschaften{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,255)),url(pictures_compressed/backgrounds/jugendtraining_platte.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.banner_vorstand{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,255)),url(pictures_compressed/backgrounds/jugendtraining_reihe_quer.JPG);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.banner_kontakt{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,255)),url(pictures_compressed/backgrounds/ttvb_gruppenbild_hallenevent-min.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.trainer_einzelbilder h5{
+  color: white;
+  text-shadow: #000 1px 1px;
+}
+
+.acc_col{
+  background-color: #111118;
+  color: white;
+} /*Hintergrundfarbe des Accordion-Elements auf #111118 geändert*/
+
+.image_hover:hover{
+  transform: scale(1.03);
+  transition: 0.3s;
+} /*Hever-Effect von Bildern*/
+
+.card_sponsoren:hover{
+  transform: scale(0.95);
+  transition: 0.3s;
+} /*Hover Effect der Sponsorenbilder*/
+
+
+
+/* mannschaften.html */
+
+
+
+.mannschaften_einzelbilder h5{
+  color: white;
+  text-shadow: #000 1px 1px;
+} /*Text Schatten eingefügt für bessere Lesbarkeit*/
+
+.mannschaften_einzelbilder p{
+  color: white;
+  text-shadow: #000 1px 1px;
+} /*Text Schatten eingefügt für bessere Lesbarkeit*/
+
+
+
+
+/* impressum.html */
+
+
+
+.impressum_gradient{
+  background: linear-gradient(to bottom, #000, #111118);
+}
+
+
+
+/* Card Groups */
+
+@media (max-width: 992px) {
+
+  .card_group_media{
+    display: flex;
+    flex-flow: column;
+  }
+  
+} /*Anordnung ändert sich je nach Displaygröße*/
+
+.card_a_img{
+  z-index: 0;
+} 
+
+.card_a_img:hover{
+  transform: scale(0.98);
+  transition: 0.3s;
+  z-index: 100;
+} /*Hover Effect für Bilder in Karte*/
+
+
+/* Button für Aktivierung des Modals (Bild im Hintergrund) */
+
+.modal_trigger_button{
+  border: 0;
+  background-color: transparent;
+}
+
+
+
+
+/* Hier beginnen Anpassungen für Header/Footer und Buttons */
+
+/* HEADER */
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #1d1f1d;
+  opacity: 0.7;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+ul#desktop li {
+  padding: 5px;
+  margin-left: 30px;
+}
+
+ul li:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#contact {
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+#contact {
+  border: 1px solid #ff3860;
+}
+
+#contact a {
+  color: #ff3860;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  position: relative;
+  margin-bottom: 10px;
+  left: -1rem;
+}
+
+.landing_page_mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 850px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  .landing_page{
+    display: none;
+  }
+
+  .landing_page_mobile{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35vh;
+  }
+}
+
+@media only screen and (max-width: 190px){
+  #brand{
+    display: none;
+  }
+}
+
+
+
+/* FOOTER */
+
+
+
+.my_arrow{
+  color: white;
+  text-decoration: none;
+
+}
+
+footer .container .my_footer_datenschutz_impressum{
+  color: white;
+  text-decoration: none;
+}
+
+footer .container .my_footer_datenschutz_impressum:hover{
+  text-decoration: underline;
+}
+
+.my_icons_footer{
+  padding-right: 2rem;
+  text-decoration: none;
+}
+
+.footer_my_a{
+  text-decoration: none;
+  color: white;
+}
+
+#instagram_color:hover{
+  color: #E1306C;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+#facebook_color:hover{
+  color: #1877F2;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
+
+/* BUTTONS */
+
+
+
+.button{
+  width: auto;
+  height: auto;
+  margin-top: 15px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.button a{
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  padding: 3px;
+}
+
+.button span{
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.button:hover{
+  background: white;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.button:hover a{
+  color: black;
+}
+
+.button:hover span{
+  color: black;
+}
+
+
+
+
+
+
+/* Mannschaftsseiten */
+
+.banner_mannschaften_h1{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,255)),url(pictures_compressed/verein/mannschaften/gruppenbilder/heren_1_neu.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}

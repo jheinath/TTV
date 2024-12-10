@@ -1,201 +1,518 @@
 <!DOCTYPE html>
-<html lang="de" onclick="onClickContentAndMenuOpened()">
-  <head>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="images/favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="images/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script type="text/javascript" src="scripts.js"></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>TTV Bühlertal | Mannschaften</title>
-  </head>
-  <body>
-    <div id="main" class="main">
-      <div class="wrapper" id="wrapper">
-        <div class="header" onclick="navigateToIndex()">
-          <img src="images/header/header.png" alt="Titelbild-TTV" />
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" user-scalable=0/>
+    <title>Tischtennisverein Bühlertal | Offizielle Seite</title>
+    <script defer src="app.js"></script>
+    <script src="https://kit.fontawesome.com/24583cc326.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <div class="banner_mannschaften">
+    <header>
+      <div id="brand"><a class="text-wrap" href="/">TTV Bühlertal</a></div>
+      <nav>
+        <ul id="desktop">
+          <li><a href="/index.html">Start</a></li>
+          <li><a href="/training.html">Training</a></li>
+          <li><a href="/verein.html">Verein</a></li>
+          <li><a href="/mannschaften.html" >Mannschaften</a></li>
+          <li><a href="/vorstand.html">Vorstand</a></li>
+          <li id="contact"><a href="/kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="/index.html">Start</a></li>
+          <li><a href="/training.html">Training</a></li>
+          <li><a href="/verein.html">Verein</a></li>
+          <li><a href="/mannschaften.html" >Mannschaften</a></li>
+          <li><a href="/vorstand.html">Vorstand</a></li>
+          <li id="contact"><a href="/kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </header>
+    <script src="app.js"></script>
+      
+    
+    
+
+    <div class="col-md-6 col-sm-6 offset-md-3 landing_page">
+      <h1 class="text-center fw-bold text-wrap landing_page_h1">Mannschaften</h1>
+      <p class="text-center fw-medium fs-4">Tischtennisverein Bühlertal e.V.</p>
+    </div>
+    <div class="landing_page_mobile">
+      <h1 class="text-center fw-bold text-wrap landing_page_h1_mobile">Mannschaften</h1>
+      <p class="text-center fw-medium fs-4">Tischtennisverein Bühlertal e.V.</p>
+    </div>
+  </div>
+
+  <section class="p-5 text-center">
+      
+        
+
+      <!-- BILDER -->
+      <div class="container-fluid d-none d-sm-block mannschaften_einzelbilder">
+        <div class="d-sm-flex justify-content-between flex-direction-row-reverse align-items-center">
+       
+        <!--
+
+          <div class="container">
+  
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade"> <!-- remove carousel-fade -> Slide  
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+
         </div>
-        <div class="main-menu" id="main-menu">
-          <script>
-            insertMenu();
-          </script>
-        </div>
-        <div class="content">
-          <div class="standard-article">
-            <h2>Mannschaften</h2>
-            <div style="text-align: center;">
-              <ul>
-                  <li>
-                      <a href="mannschaften.html#damen">Damen</a>
-                    </li>
-                <li><a href="mannschaften.html#herren1">Herren 1</a></li>
-                <li><a href="mannschaften.html#herren2">Herren 2</a></li>
-                <li><a href="mannschaften.html#herren3">Herren 3</a></li>
-                <li><a href="mannschaften.html#herren4">Herren 4</a></li>
-                
-                <li>
-                  <a href="mannschaften.html#jugend">Jugend</a>
-                </li>
-                <li><a href="mannschaften.html#schueler1">Schüler 1</a></li>
-                <li><a href="mannschaften.html#schueler2">Schüler 2</a></li>
-                <li><a href="mannschaften.html#schueler3">Schüler 3</a></li>
-              </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="pictures/mannschaften/Gruppenbilder/herren_1.webp" class="d-block w-100" alt="Trainerteam">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Herren I</h5>
+              <p>Von links nach rechts: Schuster, Albrecht, Torsten, Wulf, Bauer, Dresel</p>
             </div>
-            <hr />
-            <h4 id="damen">Damen</h4>
-            <img
-              src="images/mannschaftsbilder/Damen.jpg"
-              alt="Gruppenfoto Damen"
-              style="max-width: 80%;"
-            />
-            <a
-              href="https://www.mytischtennis.de/clicktt/SbTTV/19-20/ligen/Bezirksliga/gruppe/360662/tabelle/gesamt"
-              target="_blank"
-              >Hier zu den Ergebnisseiten</a
-            >
-            <hr />
-            <h4 id="herren1">Herren 1</h4>
-            <img
-              src="images/mannschaftsbilder/Herren1.jpg"
-              alt="Gruppenfoto Herren 1"
-              style="max-width: 80%;"
-            />
-            <a
-              href="https://www.mytischtennis.de/clicktt/SbTTV/19-20/ligen/Bezirksliga-/gruppe/357389/tabelle/gesamt"
-              target="_blank"
-              >Hier zu den Ergebnisseiten</a
-            >
-            <hr />
-            <h4 id="herren2">Herren 2</h4>
-            <img
-              src="images/mannschaftsbilder/Herren2.jpg"
-              alt="Gruppenfoto Herren 2"
-              style="max-width: 80%;"
-            />
-            <a
-              href="https://www.mytischtennis.de/clicktt/SbTTV/19-20/ligen/Kreisklasse-A--2/gruppe/360752/tabelle/gesamt"
-              target="_blank"
-              >Hier zu den Ergebnisseiten</a
-            >
-            <hr />
-            <h4 id="herren3">Herren 3</h4>
-            <img
-              src="images/mannschaftsbilder/Herren3.jpg"
-              alt="Gruppenfoto Herren 3"
-              style="max-width: 80%;"
-            />
-            <a
-              href="https://www.mytischtennis.de/clicktt/SbTTV/19-20/ligen/Kreisklasse-C/gruppe/357308/tabelle/gesamt"
-              target="_blank"
-              >Hier zu den Ergebnisseiten</a
-            >
-            <hr />
-            <h4 id="herren4">Herren 4</h4>
-            <img
-              src="images/mannschaftsbilder/Herren4.jpg"
-              alt="Gruppenfoto Herren 4"
-              style="max-width: 80%;"
-            />
-            <a
-              href="https://www.mytischtennis.de/clicktt/SbTTV/19-20/ligen/Kreisklasse-D--2/gruppe/357276/tabelle/gesamt"
-              target="_blank"
-              >Hier zu den Ergebnisseiten</a
-            >
-            <hr />
-            
-            <h4 id="jugend">Jugend</h4>
-            <img
-              src="images/mannschaftsbilder/Jugend.jpg"
-              alt="Gruppenfoto Jugend"
-              style="max-width: 80%;"
-            />
-            <a
-              href="https://www.mytischtennis.de/clicktt/SbTTV/19-20/ligen/Bezirksliga-/gruppe/360555/tabelle/gesamt"
-              target="_blank"
-              >Hier zu den Ergebnisseiten</a
-            >
-            <hr />
-            
-            <h4 id="schueler1">Schüler 1</h4>
-            <img
-              src="images/mannschaftsbilder/Schueler1.jpg"
-              alt="Gruppenfoto Schüler 1"
-              style="max-width: 80%;"
-            />
-            <a
-              href="https://www.mytischtennis.de/clicktt/SbTTV/19-20/ligen/Bezirksliga/gruppe/361406/tabelle/gesamt"
-              target="_blank"
-              >Hier zu den Ergebnisseiten</a
-            >
-            <hr />
-            <h4 id="schueler2">Schüler 2</h4>
-            <img
-              src="images/mannschaftsbilder/Schueler2.jpg"
-              alt="Gruppenfoto Schüler 2"
-              style="max-width: 80%;"
-            />
-            <a
-              href="https://www.mytischtennis.de/clicktt/SbTTV/19-20/ligen/Bezirksklasse/gruppe/362469/tabelle/gesamt"
-              target="_blank"
-              >Hier zu den Ergebnisseiten</a
-            >
-            <hr />
-            <h4 id="schueler3">Schüler 3</h4>
-            <img
-              src="images/mannschaftsbilder/Schueler3.jpg"
-              alt="Gruppenfoto Schüler 3"
-              style="max-width: 80%;"
-            />
-            <a
-              href="https://www.mytischtennis.de/clicktt/SbTTV/19-20/ligen/J13-Kreisklasse-B-2/gruppe/362468/tabelle/gesamt"
-              target="_blank"
-              >Hier zu den Ergebnisseiten</a
-            >
-            <hr />
-            
-            
-            <!-- <h4 id="freizeitgruppe">Freizeitgruppe</h4>
-            <img
-              src="images/mannschaftsbilder/freizeitgruppe_450.jpg"
-              alt="Gruppenfoto Freizeitgruppe"
-              style="max-width: 80%;"
-            />
-            <p><b>In unserem Verein existiert auch eine Freizeitgruppe.</b></p>
-            <p>
-              Erwachsene Neu- und Wiedereinsteiger sind dort herzlich
-              willkommen. Vorzugsweise Montags ab 19.30 Uhr treffen sich die
-              Teilnehmer im Rahmen des normalen Mannschaftstrainings. Bei
-              Interesse einfach vorbeikommen und mitspielen.
-            </p> -->
+          </div>
+          <div class="carousel-item">
+            <img src="pictures/mannschaften/Gruppenbilder/herren_3.webp" class="d-block w-100" alt="Ralf Zimpfer">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Herren II</h5>
+              <p>Von links nach rechts: Bauer, Decker, Ehreiser, Ganter, Sperling, Huber, Schuster</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="pictures/mannschaften/Gruppenbilder/herren_1.webp" class="d-block w-100" alt="Peter Ganter">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Herren III</h5>
+              <p>Hier noch einen Text einfügen</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="pictures/mannschaften/Gruppenbilder/herren_4.webp" class="d-block w-100" alt="Peter Ganter">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Herren IV</h5>
+              <p>Hier später eibn anderes Bild einfügen</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="pictures/mannschaften/Gruppenbilder/u13.webp" class="d-block w-100" alt="Peter Ganter">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Jugend U13 I + II</h5>
+              <p>Von links nach rechts: Stumpf, Basler, Stolz, Albrecht, Wilhelm, Wolf, Basler, Kohler</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="pictures/mannschaften/Gruppenbilder/u15.webp" class="d-block w-100" alt="Peter Ganter">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Jugend U15</h5>
+              <p>Von links nach rechts: Kohler, Geiges, Kohler (neues Bild, da Moritz fehlt)</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="pictures/mannschaften/Gruppenbilder/u19_1.webp" class="d-block w-100" alt="Peter Ganter">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Jugend U19</h5>
+              <p>Neuse Bild</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="pictures/mannschaften/Gruppenbilder/u19.webp" class="d-block w-100" alt="Peter Ganter">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mädchen U19</h5>
+              <p>Andeeres Bild</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="pictures/mannschaften/Gruppenbilder/herren_1.webp" class="d-block w-100" alt="Peter Ganter">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Damen</h5>
+              <p>Anderes Bild</p>
+            </div>
           </div>
         </div>
-        <div class="footer" id="footer">
-          <script>
-            insertFooter();
-          </script>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    -->
+
+  <div class="container d-none d-md-block d-xl-none">
+    <iframe src="https://www.mytischtennis.de/club-module/club/teams/clubNr/25009/fedNickname/TTBW" height="300" width="300"> </iframe>
+  </div>
+
+  <div class="container d-none d-xl-block">
+    <iframe src="https://www.mytischtennis.de/club-module/club/teams/clubNr/25009/fedNickname/TTBW" height="300" width="800"> </iframe>
+  </div>
+
+  <div class="container d-block d-md-none">
+    <img class="img-fluid" src="pictures_compressed/verein/mannschaften/gruppenbilder/herren1_2425.webp" alt="Mannschaften">
+  </div>
+
+    <div class="container text-sm-end">
+      <h1>Mannschaften</h1>
+
+      
+      <h2>Aktive</h2>
+      <p>Im Aktiven-Bereich können wir derzeit zwei Damen Mannschaften und 6 Herren-Mannschaften stellen</p>
+
+      <h2>Jugend</h2>
+      <p>Im Jugendbereich stellen wir in den Altersklasse U19, U15 und U11 jeweils mindestens eine Mannschaft: Zwei Mannschaften in der U19, eine Mannschaft in der U15, eine Mannschaft in der U11</p>   
+
+    </div>
+  </div>
+      </div>
+    </div>
+
+      <!-- BILDER -->
+  </div>
+</section>
+
+
+
+<!-- HERREN -->
+
+
+
+<section class="p-2">
+<div class="container text-center">
+  <h2>Herren</h2>
+<div class="row row-cols-1 row-cols-md-3 row-cols-xl-5 g-4">
+  <div class="col mx-auto">
+    <div class="card bg-dark text-light text-center h-100">
+      <img src="pictures_compressed/verein/mannschaften/gruppenbilder/herren1_2425.webp" class="card-img-top card_a_img" alt="Herren 1">
+      <div class="card-body">
+        <h5 class="card-title">Herren 1</h5>
+        <p class="card-text">
+          Bezirksliga<br>
+          1. Jens Bauer<br>
+          2. Jonas Hartmann<br>
+          3. Marius Burkart<br>
+          4. Fabian Albrecht<br>
+          5. Paul Giuriato<br>
+          6. Markus Kohler<br>
+          7. Nicolas Schuster<br>
+          8. Torsten Mehlhorn
+        </p>
+      </div>
+      <div class="card-footer">
+        <button type="button" class="button"><a href="https://www.mytischtennis.de/clicktt/TTBW/24-25/ligen/Herren-Bezirksliga/gruppe/471007/tabelle/gesamt/">Tabelle</a></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col mx-auto">
+    <div class="card bg-dark text-light text-center h-100">
+      <img src="pictures_compressed/verein/mannschaften/gruppenbilder/herren2_2425.webp" class="card-img-top card_a_img" alt="Herren 2">
+      <div class="card-body">
+        <h5 class="card-title">Herren 2</h5>
+        <p class="card-text">
+          Kreisliga A<br>
+          1. Paul Giuriato<br>
+          2. Markus Kohler<br>
+          3. Nicoals Scuster<br>
+          4. Torsten Mehlhorn<br>
+          5. Mike Eckerle
+        </p>
+      </div>
+      <div class="card-footer">
+        <button type="button" class="button"><a href="https://www.mytischtennis.de/clicktt/TTBW/24-25/ligen/Herren-Kreisliga-A/gruppe/471075/tabelle/gesamt/">Tabelle</a></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col mx-auto">
+    <div class="card bg-dark text-light text-center h-100">
+      <img src="pictures_compressed/verein/mannschaften/gruppenbilder/herren_3_neu.webp" class="card-img-top card_a_img" alt="Herren 3">
+      <div class="card-body">
+        <h5 class="card-title">Herren 3</h5>
+        <p class="card-text">
+          Kreisliga C<br>
+          1. Marco Dilger<br>
+          2. Christian Kohler<br>
+          3. Bruno Sperling<br>
+          4. Peter Ganter<br>
+          5. Jürgen Ehreiser<br>
+          6. Jürgen Ehreiser<br>
+          7. Hans-Peter Bauer
+        </p>      
+      </div>
+      <div class="card-footer">
+        <button type="button" class="button"><a href="https://www.mytischtennis.de/clicktt/TTBW/24-25/ligen/Herren-Kreisliga-C/gruppe/471167/tabelle/gesamt/">Tabelle</a></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col mx-auto">
+    <div class="card bg-dark text-light text-center h-100">
+      <img src="pictures_compressed/verein/mannschaften/gruppenbilder/herren_4.webp" class="card-img-top card_a_img" alt="Herren 4">
+      <div class="card-body">
+        <h5 class="card-title">Herren 4</h5>
+        <p class="card-text">
+          Kreisliga E<br>
+          1. Klaus Kohler<br>
+          2. Matteo Kurtz<br>
+          3. Hans-Peter Bauer<br>
+          4. Luca Huber<br>
+          5. Rene Kohler<br>
+          6. Carina Eckerle<br>
+          7. Gerlinde Stricker-Yakin
+        </p>  
+      </div>
+      <div class="card-footer">
+        <button type="button" class="button"><a href="https://www.mytischtennis.de/clicktt/TTBW/24-25/ligen/Herren-Kreisliga-E/gruppe/471253/tabelle/gesamt/">Tabelle</a></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col mx-auto">
+    <div class="card bg-dark text-light text-center h-100">
+      <img src="pictures_compressed/verein/mannschaften/gruppenbilder/herren_5.webp" class="card-img-top card_a_img" alt="Herren 5">
+      <div class="card-body">
+        <h5 class="card-title">Herren 5</h5>
+        <p class="card-text">
+          Kreisklasse G<br>
+          1. Linus Dilger<br>
+          2. Alexander Kling<br>
+          3. Rüdiger Ganter<br>
+          4. Gerlinde Stricker-Yakin<br>
+          5. Moritz Schuster<br>
+          6. Arno Geiges
+        </p>  
+      </div>
+      <div class="card-footer">
+        <button type="button" class="button"><a href="https://www.mytischtennis.de/clicktt/TTBW/24-25/ligen/Herren-Kreisliga-G/gruppe/470841/tabelle/gesamt/">Tabelle</a></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col mx-auto">
+    <div class="card bg-dark text-light text-center h-100">
+      <img src="pictures_compressed/verein/mannschaften/gruppenbilder/herren6_2425.webp" class="card-img-top card_a_img" alt="Herren 6">
+      <div class="card-body">
+        <h5 class="card-title">Herren 6</h5>
+        <p class="card-text">
+          Kreisliga H<br>
+          1. Andreas Boy<br>
+          2. Wilfried Werner<br>
+          3. Edgar Kist<br>
+          4. Andreas Stolz<br>
+          5. Arno Geiges
+        </p>  
+      </div>
+      <div class="card-footer">
+        <button type="button" class="button"><a href="https://www.mytischtennis.de/clicktt/TTBW/24-25/ligen/Herren-Kreisliga-H/gruppe/470683/tabelle/gesamt/">Tabelle</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+
+
+<!-- DAMEN -->
+
+
+
+
+<section class="p-2">
+  <div class="container text-center">
+    <h2>Damen</h2>
+  <div class="row row-cols-1 row-cols-md-3 row-cols-xl-5 g-4">
+  
+    <div class="col mx-auto">  <!--mx-auto setzt die Einzelne Karte in die Mitte-->
+      <div class="card bg-dark text-light text-center h-100">
+        <img src="pictures_compressed/verein/mannschaften/gruppenbilder/damen.webp" class="card-img-top card_a_img" alt="Damen 1">
+        <div class="card-body">
+          <h5 class="card-title">Damen 1</h5>
+          <p class="card-text">
+            Landesklasse<br>
+            1. Hannah Kohler<br>
+            2. Julia Wipper<br>
+            3. Carina Eckerle<br>
+            4. Julia Bauer<br>
+            5. Emma Konrad<br>
+            6. Gerlinde Stricker-Yakin<br>
+            7. Aline Zimpfer<br>
+            8. Julia Baumann
+          </p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="button"><a href="https://www.mytischtennis.de/community/group?groupid=445642">Tabelle</a></button>
         </div>
       </div>
     </div>
-  </body>
+    <div class="col mx-auto">  <!--mx-auto setzt die Einzelne Karte in die Mitte-->
+      <div class="card bg-dark text-light text-center h-100">
+        <img src="pictures_compressed/verein/mannschaften/gruppenbilder/" class="card-img-top card_a_img" alt="Damen 2">
+        <div class="card-body">
+          <h5 class="card-title">Damen 2</h5>
+          <p class="card-text">
+            Bezirksliga<br>
+            1. Julia Bauer<br>
+            2. Lena Kohler<br>
+            3. Gerlinde Stricker-Yakin<br>
+            4. Aline Zimpfer<br>
+            5. Marie Kohler<br>
+            6. Julia Baumann<br>
+            7. Felicitas Drost<br>
+            8. Angelina Hunkler<br>
+            9. Anna-Lena Offermann
+          </p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="button"><a href="https://www.mytischtennis.de/community/group?groupId=470928">Tabelle</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+
+
+
+<!-- JUNGEN -->
+
+
+
+
+  <section class="p-2">
+    <div class="container text-center">
+      <h2>Jungen</h2>
+    <div class="row row-cols-1 row-cols-md-3 row-cols-xl-5 g-4">
+      <div class="col mx-auto">
+        <div class="card bg-dark text-light text-center h-100">
+          <img src="pictures_compressed/verein/mannschaften/gruppenbilder/u19_1_2425.webp" class="card-img-top card_a_img" alt="Jugend U19">
+          <div class="card-body">
+            <h5 class="card-title">Jungen U19</h5>
+            <p class="card-text">
+              Bezirksliga<br>
+              1. Matteo Kurtz<br>
+              2. Linus Dilger<br>
+              3. Lena Kohler<br>
+              4. Marie Kohler<br>
+              5. Jonas Jährling<br>
+              6. Cristian Craciun<br>
+            </p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="button"><a href="https://www.mytischtennis.de/clicktt/TTBW/24-25/ligen/Jungen-19-Bezirksliga/gruppe/470911/tabelle/gesamt/">Tabelle</a></button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col mx-auto">
+        <div class="card bg-dark text-light text-center h-100">
+          <img src="pictures_compressed/verein/mannschaften/gruppenbilder/jungen19_2425.webp" class="card-img-top card_a_img" alt="Jungen U19">
+          <div class="card-body">
+            <h5 class="card-title">Jungen U19 2</h5>
+            <p class="card-text">
+              Kreisliga A<br>
+              1. Linus Geiges<br>
+              2. Moritz Schuster<br>
+              3. Leonard Kremer<br>
+              4. Angelina Hunkler<br>
+              5. Anna-Lena Offermann
+            </p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="button"><a href="https://www.mytischtennis.de/clicktt/TTBW/24-25/ligen/Jungen-19-Kreisliga-A-VR/gruppe/470985/tabelle/gesamt/">Tabelle</a></button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col mx-auto">
+        <div class="card bg-dark text-light text-center h-100">
+          <img src="pictures_compressed/verein/mannschaften/gruppenbilder/u15_2425.webp" class="card-img-top card_a_img" alt="Jungen U15">
+          <div class="card-body">
+            <h5 class="card-title">Jungen U15</h5>
+            <p class="card-text">
+              Bezirksliga<br>
+              1. Linus Geiges<br>
+              2. Leon Jung<br>
+              3. Noah Wolf<br>
+              4. Ben Wilhelm
+            </p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="button"><a href="https://www.mytischtennis.de/clicktt/TTBW/24-25/ligen/Jungen-15-Bezirksliga-VR/gruppe/470809/tabelle/gesamt/">Tabelle</a></button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col mx-auto">
+        <div class="card bg-dark text-light text-center h-100">
+          <img src="pictures_compressed/verein/mannschaften/gruppenbilder/u11_2425.webp" class="card-img-top card_a_img" alt="Jungen U11">
+          <div class="card-body">
+            <h5 class="card-title">Jungen U11</h5>
+            <p class="card-text">
+              Bezirksklasse<br>
+              1. Florian Kremer<br>
+              2. Jamie Schnurr<br>
+              3. Lena Kohler<br>
+              4. Wesley Braun<br>
+              5. Cataleya Braun<br>
+              6. Hannah Abel<br>
+              7. Franziska Bühler<br>
+              8. Kateryna Baranovska
+            </p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="button"><a href="https://www.mytischtennis.de/clicktt/TTBW/24-25/ligen/Jungen-11-Bezirksliga-VR/gruppe/476763/tabelle/gesamt/">Tabelle</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+
+  <!-- Footer -->
+    
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead"><span class="text-warning">Copyright &copy; 2024 TTV Bühlertal e.V.</span></p>
+        <a class="my_footer_datenschutz_impressum p-1" href="impressum.html">Impressum</a>
+        <a class="my_footer_datenschutz_impressum p-1" href="datenschutz.html">Datenschutz</a>
+        <a class="my_footer_datenschutz_impressum p-1" href="verein.html#mitgliedsantrag">Mitgliedsantrag</a>
+
+        <div class="position-absolute bottom-0 start-0 p-5 footer_my_a d-none d-sm-block">
+        <a class="footer_my_a" href="https://www.facebook.com/TTVBuehlertal/" id="facebook_color" target="_blank">
+          <i class="fa fa-facebook my_icons_footer"></i>
+        </a>
+        <a class="footer_my_a" href="https://www.instagram.com/ttv.buehlertal/" id="instagram_color" target="_blank">
+          <i class="fa fa-instagram my_icons_footer"></i>
+        </a>
+        </div>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="fa-solid fa-arrow-up my_arrow"></i>
+        </a>
+      </div>
+    </footer>
+
+  <!-- Footer -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+
+</body>
 </html>

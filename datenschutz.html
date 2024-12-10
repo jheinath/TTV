@@ -1,51 +1,47 @@
-<!DOCTYPE html>
-<html lang="de" onclick="onClickContentAndMenuOpened()">
-  <head>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="images/favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="images/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#2b5797" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script type="text/javascript" src="scripts.js"></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>TTV Bühlertal | Datenschutz</title>
-  </head>
-  <body>
-    <div id="main" class="main">
-      <div class="wrapper" id="wrapper">
-        <div class="header" onclick="navigateToIndex()">
-          <img src="images/header/header.png" alt="Titelbild-TTV" />
+  <div class="banner_verein fluid">
+    <header>
+        <div id="brand"><a class="text-wrap" href="/">TTV Bühlertal</a></div>
+        <nav>
+          <ul id="desktop">
+            <li><a href="/index.html">Start</a></li>
+            <li><a href="/training.html">Training</a></li>
+            <li><a href="/verein.html">Verein</a></li>
+            <li><a href="/mannschaften.html" >Mannschaften</a></li>
+            <li><a href="/vorstand.html">Vorstand</a></li>
+            <li id="contact"><a href="/kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="/index.html">Start</a></li>
+            <li><a href="/training.html">Training</a></li>
+            <li><a href="/verein.html">Verein</a></li>
+            <li><a href="/mannschaften.html" >Mannschaften</a></li>
+            <li><a href="/vorstand.html">Vorstand</a></li>
+            <li id="contact"><a href="/kontakt.html">Kontakt</a></li>
+          </ul>
         </div>
-        <div class="main-menu" id="main-menu">
-          <script>
-            insertMenu();
-          </script>
-        </div>
-        <div class="content" onclick="">
-          <div class="standard-article">
-            <h2>Datenschutz</h2>
+    </header>
+    <script src="app.js"></script>
+
+    <div class="col-md-6 col-sm-6 offset-md-3 landing_page">
+      <h1 class="text-center fw-bold text-wrap landing_page_h1">Datenschutz</h1>
+      <p class="text-center fw-medium fs-4">Tischtennis Verein Bühlertal e.V.</p>
+    </div>
+    <div class="landing_page_mobile">
+      <h1 class="text-center fw-bold text-wrap landing_page_h1_mobile">Datenschutz</h1>
+      <p class="text-center fw-medium fs-4">Tischtennis Verein Bühlertal e.V.</p>
+    </div>
+  </div>
+
+  <section class="p-5 text-center">
+    <div class="container">
+      <div class="d-sm-flex justify-content-between align-items-center">
+        <div class="text-center text-sm-start text-wrap">
+          <h2>Datenschutz</h2>
             <p>
               <b>1.) Datenschutzhinweis:<br /></b
               ><b
@@ -240,14 +236,36 @@
               Teile des Dokumentes in ihrem Inhalt und ihrer G&uuml;ltigkeit
               davon unber&uuml;hrt.
             </p>
-          </div>
-        </div>
-        <div class="footer" id="footer">
-          <script>
-            insertFooter();
-          </script>
         </div>
       </div>
     </div>
-  </body>
-</html>
+  </section>
+
+
+
+
+    <!-- Footer -->
+    
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead"><span class="text-warning">Copyright &copy; 2024 TTV Bühlertal e.V.</span></p>
+        <a class="my_footer_datenschutz_impressum p-1" href="impressum.html">Impressum</a>
+        <a class="my_footer_datenschutz_impressum p-1" href="datenschutz.html">Datenschutz</a>
+        <a class="my_footer_datenschutz_impressum p-1" href="verein.html#mitgliedsantrag">Mitgliedsantrag</a>
+
+        <div class="position-absolute bottom-0 start-0 p-5 footer_my_a d-none d-sm-block">
+        <a class="footer_my_a" href="https://www.facebook.com/TTVBuehlertal/" id="facebook_color" target="_blank">
+          <i class="fa fa-facebook my_icons_footer"></i>
+        </a>
+        <a class="footer_my_a" href="https://www.instagram.com/ttv.buehlertal/" id="instagram_color" target="_blank">
+          <i class="fa fa-instagram my_icons_footer"></i>
+        </a>
+        </div>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="fa-solid fa-arrow-up my_arrow"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Footer -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
