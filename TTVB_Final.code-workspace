@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "TTVB_Final",
+			"path": "."
+		},
+		{
+			"name": "other",
+			"path": "D:/Git/_TTVB/TTVB/other"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "TTVB_Final"
+	}
+}

@@ -1,0 +1,774 @@
+<div class="banner_index"> <!-- fluid kann hinzugefügt werden -->
+  <header>
+      <div id="brand"><a class="text-wrap" href="/">TTV Bühlertal</a></div>
+      <nav aria-label="primary menu">
+        <ul id="desktop">
+          <li><a href="/index.html">Start</a></li>
+          <li><a href="/training.html">Training</a></li>
+          <li><a href="/verein.html">Verein</a></li>
+          <li><a href="/mannschaften.html" >Mannschaften</a></li>
+          <li><a href="/vorstand.html">Vorstand</a></li>
+          <li id="contact"><a href="/kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="/index.html">Start</a></li>
+          <li><a href="/training.html">Training</a></li>
+          <li><a href="/verein.html">Verein</a></li>
+          <li><a href="/mannschaften.html" >Mannschaften</a></li>
+          <li><a href="/vorstand.html">Vorstand</a></li>
+          <li id="contact"><a href="/kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </header>
+    <script>
+      function toggleMobileMenu(menu) {
+        menu.classList.toggle('open');
+      }
+    </script>
+
+    <div class="col-md-6 col-sm-6 offset-md-3 landing_page">
+      <h1 class="text-center fw-bold text-wrap landing_page_h1">{headline -> f:format.raw()}</h1>
+    </div>
+    <div class="landing_page_mobile">
+      <h1 class="text-center fw-bold text-wrap landing_page_h1_mobile">{headline -> f:format.raw()}</h1>
+    </div>
+
+    </div>
+
+  <!-- Aktuelles -->
+<!-- 
+  <section class="p-5 text-center">
+    <div class="container">
+      <div class="d-sm-flex justify-content-between align-items-center">
+        <img class="img-fluid w-50 d-none d-sm-block" src="halle_event.JPG" alt="placeholder">
+        <div class="text-center text-sm-end text-wrap">
+          <h1>Aktuelles</h1>
+          <p>Aktuelle Informationen finden Sie auf unseren Social-Media-Kanälen</p>
+          <button type="button" class="button"><a href="https://www.instagram.com/ttv.buehlertal/" target="_blank">Instagram</a></button>
+          <button type="button" class="button"><a href="https://www.facebook.com/TTVBuehlertal/" target="_blank">Facebook</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+  <section class="p-5 text-center">
+    <div class="container">
+      <div class="d-sm-flex justify-content-between align-items-center">
+        
+        <div class="container w-50 h-100">
+          {aktuelles -> f:format.raw()}
+        </div> 
+
+        <div class="text-center text-sm-end text-wrap">
+          {socialmedia  -> f:format.raw()}
+          <button type="button" class="button"><a href="https://www.instagram.com/ttv.buehlertal/" target="_blank">Instagram</a></button>
+          <button type="button" class="button"><a href="https://www.facebook.com/TTVBuehlertal/" target="_blank">Facebook</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section>
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+    <!-- Hier beginnt die 1. Zeile -->
+
+    <div class="col">
+      <div class="card h-100 text-light bg-dark">
+        <img src="pictures_compressed/aktuelles/rosenmontag.webp" class="card-img-top" alt="Rosenmontagsstand im Regen">
+        <div class="card-body">
+          <h5 class="card-title">
+            Rosenmontag: Verkaufsstand am Rathaus
+          </h5>
+          <p class="card-text">
+            Wie jedes Jahr, war der TTV auch diesmal beim Rosenmontagsumzug in Bühlertal vertreten. 
+            Dort gab es neben den Getränken auch Brat- und Currywurst, Butterbrezeln und Käseplatten.
+            Wir bedanken uns bei allen Helfern, besonders den Helfern aus der Jugend, die uns trotz des schlechten Wetters tatkräftig unterstützt haben.
+            Wir freuen uns bereits auf nächstes Jahr.
+          </p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <small class="text-body-light">
+            19.02.2024
+          </small>
+          <button type="button" class="button" style="margin-top: 0;">
+            <a target="_blank" href="https://www.facebook.com/TTVBuehlertal/posts/pfbid02V9ZZdUwNZGiiY8Me8pXmLQFS7JoTjT4A3JbTytdx2cqNbNPqXTNw5tAp4eDa9jtFl">
+              <span>
+                Zum Beitrag
+              </span>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-light bg-dark">
+        <img src="pictures_compressed/aktuelles/2_rangliste_quer_1.webp" class="card-img-top" alt="Zweite Bezirksrangliste in der Mittelberghalle">
+        <div class="card-body">
+          <h5 class="card-title">
+            2. Bezirksrangliste beim TTV Bühlertal
+          </h5>
+          <p class="card-text">
+            Die 2. Jugendrangliste im Bezirk Rastatt/Baden-Baden hat am Sonntag den 28. 01. in der Mittelberghalle stattgefunden.   
+            Für die Verpflegung sorgten wie immer einige Eltern, während die Ressortleiterin Jugendsport Jaqueline Hörig von 
+            Spielern aus der 1. Mannschaft ind er Turnierleitung unterstützt wurde.
+          </p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <small class="text-body-light">
+            28.01.2024
+          </small>
+          <button type="button" class="button" style="margin-top: 0;">
+            <a target="_blank" href="https://www.facebook.com/story.php?story_fbid=pfbid04Pz5PHaLuRGs1MpZvHY5zB4SJi6sTLb2tfUFhSvYGyySccLwHPNCTQcNL8x9oKrGl&id=100057596494090&sfnsn=scwspwa&paipv=0&eav=AfY0sPW1AtkoKbGXf-iMz6cKkKwalWAMz9yLdiUulwh7gvykx1CuaqSnH_6dxrAOPoU&_rdr">
+              <span>
+                Zum Beitrag
+              </span>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-light bg-dark">
+        <img src="pictures_compressed/aktuelles/sportlerehrung_quer_1.webp" class="card-img-top" alt="Tischtennis Demonstration im Haus des Gastes">
+        <div class="card-body">
+          <h5 class="card-title">
+            Sportlerehrung mit Demonstration
+          </h5>
+          <p class="card-text">
+            Bei der diesjährigen Sportlerehrung, wurden nicht nur einige Spielerinnen für ihre Leistungen geehrt, 
+            es gab auch eine kleine Aufführung mit kurzem Film, den Nicolas Schuster und Fabian Albrecht produzierten.
+            Die Aufführung wurde von unserem Cheftrainer Ralf Zimpfer moderiert und Spielerinnen und Spieler aus jeder Altersklasse
+            konnten zeigen, was sie bei uns im Training gelernt haben. 
+          </p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <small class="text-body-light">
+            28.01.2024
+          </small>
+          <button type="button" class="button" style="margin-top: 0;">
+            <a target="_blank" href="https://www.facebook.com/TTVBuehlertal/posts/pfbid02XdW2AbgL9bAaC4ondLKKsVXji7gEE1pQvsd6biZAZRA1qtkf9oL8J94jsyTzs7bWl">
+              <span>
+                Zum Beitrag
+              </span>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-light bg-dark">
+        <img src="pictures_compressed/aktuelles/trainingslager_05_2.webp" class="card-img-top" alt="Teilnehmer des Trainingslagers">
+        <div class="card-body">
+          <h5 class="card-title">
+            Trainingslager Jugend und Aktive
+          </h5>
+          <p class="card-text">
+            Zur Vorbereitung der Rückrunde fand am Wochenende vom 5.1 auf den 6.1 ein zweitägiges Trainingslager unter der leitung von Ralf Zimpfer statt.
+            Mit über 20 Teilnehmern aus allen Altersklassen, war das Trainingswochenende ein voller Erfolg und auch vor der nächsten Saison wollen wir erneut
+            ein Trainingslager veranstalten
+          </p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <small class="text-body-light">
+            06.01.1024
+          </small>
+          <button type="button" class="button" style="margin-top: 0;">
+            <a target="_blank" href="https://www.facebook.com/photo/?fbid=825698319360044&set=a.533436805252865">
+              <span>
+                Zum Beitrag
+              </span>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-light bg-dark">
+        <img src="pictures_compressed/aktuelles/skatturnier_2023_30_12.webp" class="card-img-top w-50 mx-auto" alt="Gewinner des Skatturniers">
+        <div class="card-body">
+          <h5 class="card-title">
+            Skatturnier
+          </h5>
+          <p class="card-text">
+            Am 30.12.2023 fand im restaurant Schwarzwaldmädel unser traditionelles Skatturnier statt. Auch dieses Jahr wurde dieses gut besucht 
+            und wir konnten 18 Teilnehmer begrüßen. Siegreich aus dem Turnier ist Stefan Görig hervorgegangen. Auf dem 2. Platz folgete Helga Hammer
+            und 3. wurde Michael Stortz. Als Preis gab es für sie einen Gutschein für unseren Sponsor, das Restaurant Schwarzwaldmädel. Wir freuen uns auch nächstes Jahr wieder auf viele Teilnehmer!
+          </p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <small class="text-body-light">
+            30.12.2023
+          </small>
+          <button type="button" class="button" style="margin-top: 0;">
+            <a target="_blank" href="https://www.facebook.com/photo/?fbid=825698319360044&set=a.533436805252865">
+              <span>
+                Zum Beitrag
+              </span>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="col">
+      <div class="card h-100 text-light bg-dark">
+        <img src="pictures_compressed/aktuelles/halle_event.webp" class="card-img-top" alt="Mittelberghalle mit großem Aufbau">
+        <div class="card-body">
+          <h5 class="card-title">
+            Letzter Spieltag beim TTV Bühlertal in der Hinrunde
+          </h5>
+          <p class="card-text">
+            Beim letzten Spieltag der Rückrunde organisierten Anton Kirsamer und Fabian Albrecht einen großen Aufbau für die letzten Spiele. Im Anschluss gab es Pizza für alle Spieler und Zuschauer und einige Jugendliche übernachteten in der Halle.
+          </p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <small class="text-body-light">
+            10.12.2023
+          </small>
+          <button type="button" class="button" style="margin-top: 0;">
+            <a target="_blank" href="https://www.facebook.com/TTVBuehlertal/posts/pfbid0rFbD1SYezhJU2RTWraCaLtMya3RK6vkm39WAZ1qAWuENYt6B6HzBVUnRRV1TDUoSl">
+              <span>
+                Zum Beitrag
+              </span>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    
+
+    <!-- Hier beginnt die 2. Zeile -->
+
+    
+
+    <!-- Ab hier beginnt die 3. Zeile -->
+
+
+
+  </div>
+</div>
+</section>
+
+    <!-- Training -->
+
+  <section class="p-5 text-center">
+    <div class="container">
+      <div class="d-sm-flex align-items-center justify-content-between">
+        <div class="text-center text-sm-start text-wrap">
+          <h1>Training</h1>
+          <p>Mit über 7 Trainerinnen und Trainern bieten wir ein sehr gutes Jugendtraining.</p>
+          <button type="button" class="button"><a class="text-wrap" href="training.html">Weitere Informationen</a></button>
+        </div>
+        <img class="img-fluid w-50 d-none d-sm-block" src="pictures_compressed/on_website/trainingsbild-min.webp" alt="Training">
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+
+  <section class="p-5 text-center">
+    <div class="container">
+      <div class="d-sm-flex justify-content-between align-items-center">
+        <img class="img-fluid w-50 d-none d-sm-block" src="pictures_compressed/on_website/halle_mittelberg.webp" alt="Sportstätte des TTV Bühlertals">
+        <div class="text-center text-sm-end text-wrap">
+          <h1>Kontakt und Sportstätte</h1>
+          <h2>Tischtennisverein Bühlertal</h2>
+          <p>Mittelberghalle Bühlertal</p>
+          <p>Klotzbergstraße</p>
+          <p>77830 Bühlertal</p>
+
+          
+          <h2>Verantwortlicher Seitenbetreiber:</h3>
+          <p>Peter Ganter</p>
+          <p>Tel. 07223-75104</p>
+          <p>Mobil: 0171-5424721</p>
+          <p>E-Mail: peterganter@t-online.de</p>
+
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+  <!-- Footer -->
+
+  
+  
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p class="lead"><span class="text-warning">Copyright &copy; 2024 TTV Bühlertal e.V.</span></p>
+      <a class="my_footer_datenschutz_impressum p-1" href="impressum.html">Impressum</a>
+      <a class="my_footer_datenschutz_impressum p-1" href="datenschutz.html">Datenschutz</a>
+      <a class="my_footer_datenschutz_impressum p-1" href="verein.html#mitgliedsantrag">Mitgliedsantrag</a>
+
+      <div class="position-absolute bottom-0 start-0 p-5 footer_my_a d-none d-sm-block">
+      <a class="footer_my_a" href="https://www.facebook.com/TTVBuehlertal/" id="facebook_color" target="_blank">
+        <i class="fa fa-facebook my_icons_footer"></i>
+      </a>
+      <a class="footer_my_a" href="https://www.instagram.com/ttv.buehlertal/" id="instagram_color" target="_blank">
+        <i class="fa fa-instagram my_icons_footer"></i>
+      </a>
+      </div>
+      <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <i class="fa-solid fa-arrow-up my_arrow"></i>
+      </a>
+    </div>
+    
+  </footer>
+
+  
+
+  <style>
+    /* Fonts; und generelles */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, black, black, black, #111118, #1c1c27f9, #000, #000000);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+/* Landing Page Layout und Hintergrundbilder */
+
+
+
+
+.landing_page{
+  margin-top: 15%;
+  transform: translateY(-15%);
+}
+
+.landing_page .landing_page_h1{
+  font-size: 75px;
+}
+
+.landing_page .landing_page_h1_mobile{
+  font-size: 25px;
+}
+
+/* Banner */
+
+.banner_index{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,255)), url({banner});
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.banner_training{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,255)),url(pictures_compressed/backgrounds/trainingsbild-min.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.banner_verein{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,255)),url(pictures_compressed/backgrounds/jugendtraining.webp);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.banner_mannschaften{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,255)),url(pictures_compressed/backgrounds/jugendtraining_platte.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.banner_vorstand{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,255)),url(pictures_compressed/backgrounds/jugendtraining_reihe_quer.JPG);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.banner_kontakt{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,255)),url(pictures_compressed/backgrounds/ttvb_gruppenbild_hallenevent-min.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+
+
+/* index.html */
+
+
+
+
+
+/* training.html */
+
+
+
+.trainer_einzelbilder h5{
+  color: white;
+  text-shadow: #000 1px 1px;
+} /*Text Schatten eingefügt für bessere Lesbarkeit*/
+
+
+
+/* Verein */
+
+
+
+.acc_col{
+  background-color: #111118;
+  color: white;
+} /*Hintergrundfarbe des Accordion-Elements auf #111118 geändert*/
+
+.image_hover:hover{
+  transform: scale(1.03);
+  transition: 0.3s;
+} /*Hever-Effect von Bildern*/
+
+.card_sponsoren:hover{
+  transform: scale(0.95);
+  transition: 0.3s;
+} /*Hover Effect der Sponsorenbilder*/
+
+
+
+/* mannschaften.html */
+
+
+
+.mannschaften_einzelbilder h5{
+  color: white;
+  text-shadow: #000 1px 1px;
+} /*Text Schatten eingefügt für bessere Lesbarkeit*/
+
+.mannschaften_einzelbilder p{
+  color: white;
+  text-shadow: #000 1px 1px;
+} /*Text Schatten eingefügt für bessere Lesbarkeit*/
+
+
+
+
+/* impressum.html */
+
+
+
+.impressum_gradient{
+  background: linear-gradient(to bottom, #000, #111118);
+}
+
+
+
+/* Card Groups */
+
+@media (max-width: 992px) {
+
+  .card_group_media{
+    display: flex;
+    flex-flow: column;
+  }
+  
+} /*Anordnung ändert sich je nach Displaygröße*/
+
+.card_a_img{
+  z-index: 0;
+} 
+
+.card_a_img:hover{
+  transform: scale(0.98);
+  transition: 0.3s;
+  z-index: 100;
+} /*Hover Effect für Bilder in Karte*/
+
+
+/* Button für Aktivierung des Modals (Bild im Hintergrund) */
+
+.modal_trigger_button{
+  border: 0;
+  background-color: transparent;
+}
+
+
+
+
+/* Hier beginnen Anpassungen für Header/Footer und Buttons */
+
+/* HEADER */
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #1d1f1d;
+  opacity: 0.7;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+ul#desktop li {
+  padding: 5px;
+  margin-left: 30px;
+}
+
+ul li:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#contact {
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+#contact {
+  border: 1px solid #ff3860;
+}
+
+#contact a {
+  color: #ff3860;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  position: relative;
+  margin-bottom: 10px;
+  left: -1rem;
+}
+
+.landing_page_mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 850px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  .landing_page{
+    display: none;
+  }
+
+  .landing_page_mobile{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35vh;
+  }
+}
+
+@media only screen and (max-width: 190px){
+  #brand{
+    display: none;
+  }
+}
+
+
+
+/* FOOTER */
+
+
+
+.my_arrow{
+  color: white;
+  text-decoration: none;
+
+}
+
+footer .container .my_footer_datenschutz_impressum{
+  color: white;
+  text-decoration: none;
+}
+
+footer .container .my_footer_datenschutz_impressum:hover{
+  text-decoration: underline;
+}
+
+.my_icons_footer{
+  padding-right: 2rem;
+  text-decoration: none;
+}
+
+.footer_my_a{
+  text-decoration: none;
+  color: white;
+}
+
+#instagram_color:hover{
+  color: #E1306C;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+#facebook_color:hover{
+  color: #1877F2;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
+
+/* BUTTONS */
+
+
+
+.button{
+  width: auto;
+  height: auto;
+  margin-top: 15px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.button a{
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  padding: 3px;
+}
+
+.button span{
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.button:hover{
+  background: white;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.button:hover a{
+  color: black;
+}
+
+.button:hover span{
+  color: black;
+}
+
+/* Mannschaftsseiten */
+
+.banner_mannschaften_h1{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,255)),url(pictures_compressed/verein/mannschaften/gruppenbilder/heren_1_neu.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+  </style>

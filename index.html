@@ -1,68 +1,404 @@
 <!DOCTYPE html>
-<html lang="de" onclick="onClickContentAndMenuOpened()">
-  <head>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="images/favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="images/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script type="text/javascript" src="scripts.js"></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>TTV Bühlertal | Startseite</title>
-  </head>
-  <body>
-    <div id="main" class="main">
-      <div class="wrapper" id="wrapper">
-        <div class="header" onclick="navigateToIndex()">
-          <img src="images/header/header.png" alt="Titelbild-TTV" />
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" user-scalable=0/>
+    <meta name="description" content="Tischtennisverein Bühlertal; Hier finden sie Informationen über den Verein, Spieler, trainer, Mannschaften.">
+    <title>Tischtennisverein Bühlertal | Offizielle Seite</title>
+    <script defer src="app.js"></script>
+    <script src="https://kit.fontawesome.com/24583cc326.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="other/TTVB_LOGO_1500p_weiß.png">
+</head>
+
+<body>
+    <div class="banner_index"> <!-- fluid kann hinzugefügt werden -->
+    <header>
+        <div id="brand"><a class="text-wrap" href="/">TTV Bühlertal</a></div>
+        <nav aria-label="primary menu">
+          <ul id="desktop">
+            <li><a href="/index.html">Start</a></li>
+            <li><a href="/training.html">Training</a></li>
+            <li><a href="/verein.html">Verein</a></li>
+            <li><a href="/mannschaften.html" >Mannschaften</a></li>
+            <li><a href="/vorstand.html">Vorstand</a></li>
+            <li id="contact"><a href="/kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="/index.html">Start</a></li>
+            <li><a href="/training.html">Training</a></li>
+            <li><a href="/verein.html">Verein</a></li>
+            <li><a href="/mannschaften.html" >Mannschaften</a></li>
+            <li><a href="/vorstand.html">Vorstand</a></li>
+            <li id="contact"><a href="/kontakt.html">Kontakt</a></li>
+          </ul>
         </div>
-        <div class="main-menu" id="main-menu">
-          <script>
-            insertMenu();
-          </script>
-        </div>
-        <div class="content">
-          <div class="standard-article">
-            <h2>Herzlich Willkommen beim TTV Bühlertal!</h2>
-            <p>Lieber Besucher,</p>
-            <p></p>
-            <p>wir begrüßen Sie recht herzlich auf unserer Homepage!</p>
-            <p>
-              Hier finden Sie Informationen rund um unseren Verein,
-              Mannschaften, Vorstandschaft, Trainingszeiten uvm. Bei Interesse
-              können Sie uns gerne eine E-Mail schreiben oder schauen Sie doch
-              einfach mal im Training vorbei!
-            </p>
-            <p>Wir freuen uns auf Sie! Mit freundlichen Grüßen</p>
-            <p>TTV Bühlertal</p>
+      </header>
+      <script src="app.js"></script>
+
+      <div class="col-md-6 col-sm-6 offset-md-3 landing_page">
+        <h1 class="text-center fw-bold text-wrap landing_page_h1">TTV Bühlertal</h1>
+        <p class="text-center fw-medium fs-4">Tischtennisverein Bühlertal e.V.</p>
+      </div>
+      <div class="landing_page_mobile">
+        <h1 class="text-center fw-bold text-wrap landing_page_h1_mobile">TTV Bühlertal</h1>
+        <p class="text-center fw-medium fs-4">Tischtennisverein Bühlertal e.V.</p>
+      </div>
+
+      </div>
+
+    <!-- Aktuelles -->
+<!-- 
+    <section class="p-5 text-center">
+      <div class="container">
+        <div class="d-sm-flex justify-content-between align-items-center">
+          <img class="img-fluid w-50 d-none d-sm-block" src="halle_event.JPG" alt="placeholder">
+          <div class="text-center text-sm-end text-wrap">
+            <h1>Aktuelles</h1>
+            <p>Aktuelle Informationen finden Sie auf unseren Social-Media-Kanälen</p>
+            <button type="button" class="button"><a href="https://www.instagram.com/ttv.buehlertal/" target="_blank">Instagram</a></button>
+            <button type="button" class="button"><a href="https://www.facebook.com/TTVBuehlertal/" target="_blank">Facebook</a></button>
           </div>
         </div>
-        <div class="footer" id="footer">
-          <script>
-            insertFooter();
-          </script>
+      </div>
+    </section>
+ -->
+    <section class="p-5 text-center">
+      <div class="container">
+        <div class="d-sm-flex justify-content-between align-items-center">
+          
+          <div class="container w-50 h-100">
+
+            <img src="pictures_compressed/aktuelles/rosenmontag.webp" alt="Rosenmontagsstand" class="d-none d-sm-block img-fluid h-100 d-lg-none">
+
+            <div id="carouselExample" class="carousel slide d-lg-block d-none">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="pictures_compressed/aktuelles/2_rangliste_quer_1.webp" class="d-block img-fluid h-100" alt="2. Ranglistendurchgang">
+                </div>
+                <div class="carousel-item">
+                  <img src="pictures_compressed/aktuelles/rosenmontag.webp" class="d-block img-fluid h-100" alt="Rosenmontag">
+                </div>
+                <div class="carousel-item">
+                  <img src="pictures_compressed/aktuelles/sportlerehrung_quer_1.webp" class="d-block img-fluid h-100" alt="Sportlerehrung">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="text-center text-sm-end text-wrap">
+            <h1>Aktuelles</h1>
+            <p>Aktuelle Informationen finden Sie hier und auf unseren Social-Media-Kanälen:</p>
+            <button type="button" class="button"><a href="https://www.instagram.com/ttv.buehlertal/" target="_blank">Instagram</a></button>
+            <button type="button" class="button"><a href="https://www.facebook.com/TTVBuehlertal/" target="_blank">Facebook</a></button>
+          </div>
         </div>
       </div>
+    </section>
+
+
+<section>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+      <!-- Hier beginnt die 1. Zeile -->
+
+      <div class="col">
+        <div class="card h-100 text-light bg-dark">
+          <img src="pictures_compressed/aktuelles/rosenmontag.webp" class="card-img-top" alt="Rosenmontagsstand im Regen">
+          <div class="card-body">
+            <h5 class="card-title">
+              Rosenmontag: Verkaufsstand am Rathaus
+            </h5>
+            <p class="card-text">
+              Wie jedes Jahr, war der TTV auch diesmal beim Rosenmontagsumzug in Bühlertal vertreten. 
+              Dort gab es neben den Getränken auch Brat- und Currywurst, Butterbrezeln und Käseplatten.
+              Wir bedanken uns bei allen Helfern, besonders den Helfern aus der Jugend, die uns trotz des schlechten Wetters tatkräftig unterstützt haben.
+              Wir freuen uns bereits auf nächstes Jahr.
+            </p>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <small class="text-body-light">
+              19.02.2024
+            </small>
+            <button type="button" class="button" style="margin-top: 0;">
+              <a target="_blank" href="https://www.facebook.com/TTVBuehlertal/posts/pfbid02V9ZZdUwNZGiiY8Me8pXmLQFS7JoTjT4A3JbTytdx2cqNbNPqXTNw5tAp4eDa9jtFl">
+                <span>
+                  Zum Beitrag
+                </span>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 text-light bg-dark">
+          <img src="pictures_compressed/aktuelles/2_rangliste_quer_1.webp" class="card-img-top" alt="Zweite Bezirksrangliste in der Mittelberghalle">
+          <div class="card-body">
+            <h5 class="card-title">
+              2. Bezirksrangliste beim TTV Bühlertal
+            </h5>
+            <p class="card-text">
+              Die 2. Jugendrangliste im Bezirk Rastatt/Baden-Baden hat am Sonntag den 28. 01. in der Mittelberghalle stattgefunden.   
+              Für die Verpflegung sorgten wie immer einige Eltern, während die Ressortleiterin Jugendsport Jaqueline Hörig von 
+              Spielern aus der 1. Mannschaft ind er Turnierleitung unterstützt wurde.
+            </p>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <small class="text-body-light">
+              28.01.2024
+            </small>
+            <button type="button" class="button" style="margin-top: 0;">
+              <a target="_blank" href="https://www.facebook.com/story.php?story_fbid=pfbid04Pz5PHaLuRGs1MpZvHY5zB4SJi6sTLb2tfUFhSvYGyySccLwHPNCTQcNL8x9oKrGl&id=100057596494090&sfnsn=scwspwa&paipv=0&eav=AfY0sPW1AtkoKbGXf-iMz6cKkKwalWAMz9yLdiUulwh7gvykx1CuaqSnH_6dxrAOPoU&_rdr">
+                <span>
+                  Zum Beitrag
+                </span>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 text-light bg-dark">
+          <img src="pictures_compressed/aktuelles/sportlerehrung_quer_1.webp" class="card-img-top" alt="Tischtennis Demonstration im Haus des Gastes">
+          <div class="card-body">
+            <h5 class="card-title">
+              Sportlerehrung mit Demonstration
+            </h5>
+            <p class="card-text">
+              Bei der diesjährigen Sportlerehrung, wurden nicht nur einige Spielerinnen für ihre Leistungen geehrt, 
+              es gab auch eine kleine Aufführung mit kurzem Film, den Nicolas Schuster und Fabian Albrecht produzierten.
+              Die Aufführung wurde von unserem Cheftrainer Ralf Zimpfer moderiert und Spielerinnen und Spieler aus jeder Altersklasse
+              konnten zeigen, was sie bei uns im Training gelernt haben. 
+            </p>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <small class="text-body-light">
+              28.01.2024
+            </small>
+            <button type="button" class="button" style="margin-top: 0;">
+              <a target="_blank" href="https://www.facebook.com/TTVBuehlertal/posts/pfbid02XdW2AbgL9bAaC4ondLKKsVXji7gEE1pQvsd6biZAZRA1qtkf9oL8J94jsyTzs7bWl">
+                <span>
+                  Zum Beitrag
+                </span>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 text-light bg-dark">
+          <img src="pictures_compressed/aktuelles/trainingslager_05_2.webp" class="card-img-top" alt="Teilnehmer des Trainingslagers">
+          <div class="card-body">
+            <h5 class="card-title">
+              Trainingslager Jugend und Aktive
+            </h5>
+            <p class="card-text">
+              Zur Vorbereitung der Rückrunde fand am Wochenende vom 5.1 auf den 6.1 ein zweitägiges Trainingslager unter der leitung von Ralf Zimpfer statt.
+              Mit über 20 Teilnehmern aus allen Altersklassen, war das Trainingswochenende ein voller Erfolg und auch vor der nächsten Saison wollen wir erneut
+              ein Trainingslager veranstalten
+            </p>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <small class="text-body-light">
+              06.01.1024
+            </small>
+            <button type="button" class="button" style="margin-top: 0;">
+              <a target="_blank" href="https://www.facebook.com/photo/?fbid=825698319360044&set=a.533436805252865">
+                <span>
+                  Zum Beitrag
+                </span>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 text-light bg-dark">
+          <img src="pictures_compressed/aktuelles/skatturnier_2023_30_12.webp" class="card-img-top w-50 mx-auto" alt="Gewinner des Skatturniers">
+          <div class="card-body">
+            <h5 class="card-title">
+              Skatturnier
+            </h5>
+            <p class="card-text">
+              Am 30.12.2023 fand im restaurant Schwarzwaldmädel unser traditionelles Skatturnier statt. Auch dieses Jahr wurde dieses gut besucht 
+              und wir konnten 18 Teilnehmer begrüßen. Siegreich aus dem Turnier ist Stefan Görig hervorgegangen. Auf dem 2. Platz folgete Helga Hammer
+              und 3. wurde Michael Stortz. Als Preis gab es für sie einen Gutschein für unseren Sponsor, das Restaurant Schwarzwaldmädel. Wir freuen uns auch nächstes Jahr wieder auf viele Teilnehmer!
+            </p>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <small class="text-body-light">
+              30.12.2023
+            </small>
+            <button type="button" class="button" style="margin-top: 0;">
+              <a target="_blank" href="https://www.facebook.com/photo/?fbid=825698319360044&set=a.533436805252865">
+                <span>
+                  Zum Beitrag
+                </span>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="col">
+        <div class="card h-100 text-light bg-dark">
+          <img src="pictures_compressed/aktuelles/halle_event.webp" class="card-img-top" alt="Mittelberghalle mit großem Aufbau">
+          <div class="card-body">
+            <h5 class="card-title">
+              Letzter Spieltag beim TTV Bühlertal in der Hinrunde
+            </h5>
+            <p class="card-text">
+              Beim letzten Spieltag der Rückrunde organisierten Anton Kirsamer und Fabian Albrecht einen großen Aufbau für die letzten Spiele. Im Anschluss gab es Pizza für alle Spieler und Zuschauer und einige Jugendliche übernachteten in der Halle.
+            </p>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <small class="text-body-light">
+              10.12.2023
+            </small>
+            <button type="button" class="button" style="margin-top: 0;">
+              <a target="_blank" href="https://www.facebook.com/TTVBuehlertal/posts/pfbid0rFbD1SYezhJU2RTWraCaLtMya3RK6vkm39WAZ1qAWuENYt6B6HzBVUnRRV1TDUoSl">
+                <span>
+                  Zum Beitrag
+                </span>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+
+      
+
+      <!-- Hier beginnt die 2. Zeile -->
+
+      
+
+      <!-- Ab hier beginnt die 3. Zeile -->
+
+
+
     </div>
-  </body>
+  </div>
+  </section>
+
+      <!-- Training -->
+
+    <section class="p-5 text-center">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div class="text-center text-sm-start text-wrap">
+            <h1>Trainer und Training beim TTV Bühlertal:</h1>
+            <p>Der TTV Bühlertal bietet zwei Mal in der Woche (montags und mittwochs) ein qualifiziertes Jugend- und Aktiventraining 
+              in der Mittelberghalle an. Zudem haben wir freitags ein zusätzliche Trainingsmöglichkeit als ergänzende Vorbereitung nach Absprache. 
+              Neben unserem B-Lizenz-Trainer Ralf Zimpfer sind sieben Jugendtrainer/innen mit C-Lizenz abwechselnd im Einsatz. 
+              Interessierte Jugendliche ab 7-10 Jahren können bei uns 6-8 Wochen kostenlos einen Tischtennis-Schnupperkurs absolvieren.</p>
+            <button type="button" class="button"><a class="text-wrap" href="training.html">Weitere Informationen</a></button>
+          </div>
+          <img class="img-fluid w-50 d-none d-sm-block" src="pictures_compressed/on_website/trainingsbild-min.webp" alt="Training">
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+
+    <section class="p-5 text-center">
+      <div class="container">
+        <div class="d-sm-flex justify-content-between align-items-center">
+          <img class="img-fluid w-50 d-none d-sm-block" src="pictures_compressed/on_website/halle_mittelberg.webp" alt="Sportstätte des TTV Bühlertals">
+          <div class="text-center text-sm-end text-wrap">
+            <h1>Kontakt und Sportstätte</h1>
+            <h2>Tischtennisverein Bühlertal</h2> 
+            <p>Mittelberghalle Bühlertal</p>
+            <p>Klotzbergstraße</p>
+            <p>77830 Bühlertal</p>
+
+            
+            <h2>Verantwortlicher Seitenbetreiber:</h3>
+            <p>Peter Ganter</p>
+            <p>Tel. 07223-75104</p>
+            <p>Mobil: 0171-5424721</p>
+            <p>E-Mail: peterganter@t-online.de</p>
+
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    
+    <!-- Footer -->
+
+    
+    
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead"><span class="text-warning">Copyright &copy; 2024 TTV Bühlertal e.V.</span></p>
+        <p id="year-el"></p>
+
+        <script>
+          let yearEl = document.getElementById("year-el")
+          var inYear = new Date().getFullYear();
+          yearEl.textContent = "Copyright &copy; TTV Bühlertal e.V."
+        </script>
+        <a class="my_footer_datenschutz_impressum p-1" href="impressum.html">Impressum</a>
+        <a class="my_footer_datenschutz_impressum p-1" href="datenschutz.html">Datenschutz</a>
+        <a class="my_footer_datenschutz_impressum p-1" href="verein.html#mitgliedsantrag">Mitgliedsantrag</a>
+
+        <div class="position-absolute bottom-0 start-0 p-5 footer_my_a d-none d-sm-block">
+        <a class="footer_my_a" href="https://www.facebook.com/TTVBuehlertal/" id="facebook_color" target="_blank">
+          <i class="fa fa-facebook my_icons_footer"></i>
+        </a>
+        <a class="footer_my_a" href="https://www.instagram.com/ttv.buehlertal/" id="instagram_color" target="_blank">
+          <i class="fa fa-instagram my_icons_footer"></i>
+        </a>
+        </div>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="fa-solid fa-arrow-up my_arrow"></i>
+        </a>
+      </div>
+    </footer>
+
+    
+
+    <!-- Footer -->
+
+
+
+
+
+
+  <!-- Icons 
+
+  <div class="icons_my">
+    <ul class="icons_my_ul">
+        <a class="icons_my_a" href="#" target="_blank"><li class="instagram_icons_my_li"><i class="fa fa-instagram"></i></li></a>
+        <a class="icons_my_a" href="#" target="_blanl"><li class="facebook_icons_my_li"><i class="fa fa-facebook"></i></li></a>
+    </ul>
+  </div>
+
+   Icons -->
+      <script src="app.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+    </body>
 </html>
